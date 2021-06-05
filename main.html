@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 	<body>
+
 		<header class="head">
 			<div id="titre">
 				<h1>JustStreamIt</h1>
@@ -18,78 +19,176 @@
 			</nav>
 		</header>
 
+		<aside id="modal">
+			<div id="modal_content">
+				<div id="modal_head">
+					<h2 id="modal_title"></h2>
+					<span id="modal_close">&times;</span>
+				</div>
+				<div id="modal_body">
+					<img src=""  id="modal_img"></img>
+					<h3>Genre</h3>
+					<p id="modal_genre"></p>
+					<h3>Date de sortie</h3>
+					<p id="modal_date"></p>
+					<h3>Note </h3>
+					<p id="modal_note"></p>
+					<h3>Note Imdb</h3>
+					<p id="modal_imdb"></p>
+					<h3>Réalisateur</h3>
+					<p id="modal_director"></p>
+					<h3>Acteurs</h3>
+					<p id="modal_actors"></p>
+					<h3>Durée</h3>
+					<p id="modal_time"></p>
+					<h3>Pays d'origine</h3>
+					<p id="modal_origine"></p>
+					<h3>Box-Office</h3>
+					<p id="modal_office"></p>
+					<h3>longue description</h3>
+					<p id="modal_resume"></p>
+				</div>
+			</div>
+		</aside>
+
 		<div id="best_film">
-			<img src="" id="img_best">
+			<img src="" id="img_best" >
 			<h2 id="titre_best"></h2>
 			<p id="description_best"></p>
-			<button id="button">Lecture</button>
+			<button id="boutton" onclick="bestModal(0); show()">Lecture</button>
 		</div>
 
 		<section id="best_rate">
 			<h2>Films les mieux notés</h2>
 			<div id="carousel_1">
 				<div class="all_movies">
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
+					<div class="movie">
+						<img src="" 
+						onclick="bestModal(1); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="bestModal(2); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="bestModal(3); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="bestModal(4); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="bestModal(5); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="bestModal(6); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="bestModal(7); show()"></div>
 				</div>
-			<div class="next">
-				<div class="prev_movie" onclick="prev()"></div>
-				<div class="next_movie" onclick="next()"></div>
-			</div>
+				<div class="next">
+					<div class="prev_movie" onclick="prev('carousel_1')">&#10094;</div>
+					<div class="next_movie" onclick="next('carousel_1')">&#10095;</div>
+				</div>
 			</div>
 		</section>
 
 		<section id="cat_1">
-			<h2>Categorie 1</h2>
+			<h2>Aventure</h2>
 			<div id="carousel_2">
 				<div class="all_movies">
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
+					<div class="movie">
+						<img src="" 
+						onclick="adventureModal(0); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="adventureModal(1); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="adventureModal(2); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="adventureModal(3); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="adventureModal(4); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="adventureModal(5); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="adventureModal(6); show()"></div>
+				</div>
+				<div class="next_2">
+					<div class="prev_movie" onclick="prev('carousel_2')">&#10094;</div>
+					<div class="next_movie" onclick="next('carousel_2')">&#10095;</div>
 				</div>
 			</div>
 		</section>
 
 		<section id="cat_2">
-			<h2>Categorie 2</h2>
+			<h2>Animation</h2>
 			<div id="carousel_3">
 				<div class="all_movies">
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
+					<div class="movie">
+						<img src="" 
+						onclick="animationModal(0); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="animationModal(1); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="animationModal(2); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="animationModal(3); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="animationModal(4); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="animationModal(5); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="animationModal(6); show()"></div>
+				</div>
+				<div class="next_3">
+					<div class="prev_movie" onclick="prev('carousel_3')">&#10094;</div>
+					<div class="next_movie" onclick="next('carousel_3')">&#10095;</div>
 				</div>
 			</div>
 		</section>
 
 		<section id="cat_3">
-			<h2>Categorie 3</h2>
+			<h2>Comédie</h2>
 			<div id="carousel_4">
 				<div class="all_movies">
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
-					<div class="movie"><img src=""></div>
+					<div class="movie">
+						<img src="" 
+						onclick="comedyModal(0); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="comedyModal(1); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="comedyModal(2); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="comedyModal(3); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="comedyModal(4); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="comedyModal(5); show()"></div>
+					<div class="movie">
+						<img src="" 
+						onclick="comedyModal(6); show()"></div>
+				</div>
+				<div class="next_4">
+					<div class="prev_movie" onclick="prev('carousel_4')">&#10094;</div>
+					<div class="next_movie" onclick="next('carousel_4')">&#10095;</div>
 				</div>
 			</div>
 		</section>
-
-
 
 	<script type="text/javascript" src="main.js"></script>
 	</body>
