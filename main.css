@@ -25,6 +25,11 @@ body
 	margin: auto;
 }
 
+h2
+{
+	text-align: center;
+}
+
 #best_film
 {
 	text-align: center;
@@ -32,7 +37,10 @@ body
 	padding: 5px 5px 5px 5px;
 }
 
-#img_best{}
+#boutton{
+	background-color: red;
+	border-radius: 5px;
+}
 
 .all_movies 
 {
@@ -79,3 +87,39 @@ body
 
 .prev_movie:hover, .next_movie:hover
 {transform: scale(1.2);}
+
+
+#modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+#modal_head {
+	display: flex;
+	justify-content: space-between;
+}
+
+#modal_content {
+  background-color: white;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center; 
+}
+
+#modal_close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
