@@ -1,4 +1,3 @@
-
 function bestMovie(){
 	let url = "http://localhost:8000/api/v1/titles/?sort_by=-imdb_score"
 	fetch(url)
@@ -37,13 +36,13 @@ function all_best_movies(){
 			fetch(data["next"])
 				.then(res => res.json())
 				.then(newData => {
-					for (i; 5 < i < find_img.length; i++, next++){
 						find_img[i-1].setAttribute('src', newData["results"][next]["image_url"]);
-					} 	
+						find_img[i].setAttribute('src', newData["results"][next+1]["image_url"]);
+						find_img[i+1].setAttribute('src', newData["results"][next+2]["image_url"]);
+						
 				})
 			})
 	}
-	
 
 function categorie(url, carouselID){
 	let find_img = document.getElementById(carouselID).getElementsByTagName('img');
@@ -58,7 +57,7 @@ function categorie(url, carouselID){
 			fetch(data["next"])
 				.then(res => res.json())
 				.then(newData => {
-					for(i; 5 < i < find_img.length; i++, next++){
+					for(i; i < find_img.length; i++, next++){
 						find_img[i].setAttribute('src', newData["results"][next]["image_url"])
 					}	
 				})
