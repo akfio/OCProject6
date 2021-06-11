@@ -17,9 +17,7 @@ Placer le serveur dans le dossier projet6
 
 créez un environnement virtuel dans le dossier (ici nommé env):
 ```python
-source env/bin/activate #MacOS ou Unix
-ou
-env/Scripts/activate.bat #Sur Windows
+python3 -m venv env
 ```
 Puis activez l'environnement virtuel via :
 
