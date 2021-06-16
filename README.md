@@ -4,6 +4,7 @@ Développez une interface utilisateur pour une application web Python
 ## Installation
 
 Tout d'abord, créez un dossier via la commande mkdir (ici projet6) dans lequel se trouvera l'environnement virtuel et l'API. Puis y accéder via la commande cd.
+Placer les fichiers .html, .css et .js dans ce dossier.
 
 ```python
 mkdir projet6
